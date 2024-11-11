@@ -1,5 +1,5 @@
-const express = required('express');
-const cors = required('cors');
+const express = require('express');
+const cors = require('cors');
 const marcaRouter = require('./routers/marcaRouter');
 const modeloRouter = require('./routers/modeloRouter');
 const veiculoRouter = require('./routers/veiculoRouter');
