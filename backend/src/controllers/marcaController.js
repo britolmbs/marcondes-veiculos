@@ -1,4 +1,4 @@
-const fipeService = require('.../services/fipeService');
+const fipeService = require('../services/fipeService');
 
 const getMarcas = async (req, res) => {
         const { tipo } = req.query;

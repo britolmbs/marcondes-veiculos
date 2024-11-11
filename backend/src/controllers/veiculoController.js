@@ -1,4 +1,4 @@
-const fipeService = requiere('../services/fipeService');
+const fipeService = require('../services/fipeService');
 
 const getVeiculo = async (req, res) => {
     const {tipo } = req.query;

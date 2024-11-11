@@ -34,7 +34,7 @@ const getAnos = async (tipo = 'carros', marcaId, modeloId) => {
     if(!marcaId || !modeloId) throw new Error('marca e modelo são obrigatorios');
 
     const cacheKey = `anos_${tipo}_${marcaId}_${modeloId}`;
-    const cached = chace.get(cacheKey);
+    const cached = chache.get(cacheKey);
     if (cached) return cached;
 
     try {
@@ -47,7 +47,7 @@ const getAnos = async (tipo = 'carros', marcaId, modeloId) => {
     }
 };
 
-const getVeiculo = async (tipo = 'carros', marcaId, ModeloId, ano) => {
+const getVeiculo = async (tipo = 'carros', marcaId, modeloId, ano) => {
     if (!marcaId || !modeloId || !ano) throw new Error('Marca, modelo e ano são obrigatorios');
 
     const cacheKey = `veiculo_${tipo}_${marcaId}_${modeloId}_${ano}`;
@@ -63,7 +63,7 @@ const getVeiculo = async (tipo = 'carros', marcaId, ModeloId, ano) => {
         throw new Error('Erro ao obter veículo');
     }
 };
-   modelo.exports = {
+   module.exports = {
     getMarcas,
     getModelos,
     getAnos,
