@@ -28,7 +28,7 @@ const CarCard = ({ veiculo }) => {
     );
 };
 
-CarCard.PropTypes ={
+CarCard.propTypes ={
     veiculo: PropTypes.shape({
         nome: PropTypes.string.isRequired,
         preco: PropTypes.string.isRequired,
