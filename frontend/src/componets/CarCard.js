@@ -1,7 +1,7 @@
 import React from "react";
 import {Button, Card, CardActions, CardContent, CardMedia, Typography} from "@mui/material";
 import PropTypes from 'prop-types';
-import placeholder from '../assets/placeholder.png';
+import placeholder from '../assets/images/placeholder.png';
 
 const CarCard = ({ veiculo }) => {
     const { nome, preco, imagem } = veiculo;

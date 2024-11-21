@@ -1,0 +1,13 @@
+
+
+body {
+    background-color: #f5f5f5;
+}
+
+.MuiCard-root {
+    transition: transform 0.2s;
+}
+
+.MuiCard-root:hover {
+    transform: scale(1.05);
+}

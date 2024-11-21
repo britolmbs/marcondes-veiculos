@@ -3,7 +3,7 @@ import { getModelos } from "../services/api";
 import PropTypes from 'prop-types';
 import { FormControl, FormHelperText, InputLabel, MenuItem, Select } from "@mui/material";
 
-const ModeloSelect = ({ selectedMarca, selectedModelo, setSelectedModelo} => {
+const ModeloSelect = ({ selectedMarca, selectedModelo, setSelectedModelo}) => {
     const[modelos, setModelos] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -47,7 +47,7 @@ const ModeloSelect = ({ selectedMarca, selectedModelo, setSelectedModelo} => {
                 {loading && <FormHelperText>Carregando modelos...</FormHelperText>}
                 {error && <FormHelperText error>{error}</FormHelperText>} 
         </FormControl>
-    );
+);
 };
 ModeloSelect.propTypes ={
     selectedMarca: PropTypes.string.isRequired,
